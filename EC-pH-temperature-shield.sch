@@ -1,0 +1,190 @@
+EESchema Schematic File Version 2  date sam. 28 juil. 2012 16:52:23 CEST
+LIBS:arduino_shieldsNCL
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 43  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 2
+Title ""
+Date "28 jul 2012"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6100 4250 6300 4250
+Wire Wire Line
+	6300 4250 6300 3600
+Wire Wire Line
+	6300 3600 8600 3600
+Wire Wire Line
+	8600 3600 8600 3800
+Wire Wire Line
+	8800 5250 8800 3950
+Wire Wire Line
+	8800 3950 7200 3950
+Wire Wire Line
+	7200 3950 7200 3900
+Wire Wire Line
+	8600 5250 8600 5050
+Wire Wire Line
+	8900 4300 8600 4300
+Wire Wire Line
+	9500 4500 9500 4050
+Wire Wire Line
+	9500 4050 9300 4050
+Wire Wire Line
+	8600 4300 8600 4550
+Wire Wire Line
+	4200 3550 4050 3550
+Wire Wire Line
+	6100 3050 6500 3050
+Wire Wire Line
+	6500 3050 6500 3150
+Wire Wire Line
+	8600 5050 7200 5050
+Wire Wire Line
+	7200 5050 7200 4300
+Wire Wire Line
+	8900 4050 8600 4050
+Wire Wire Line
+	9300 4300 9500 4300
+Connection ~ 9500 4300
+Connection ~ 8800 4300
+Wire Wire Line
+	7200 4300 6100 4300
+Wire Wire Line
+	6100 4300 6100 4350
+$Comp
+L C C2
+U 1 1 5013F7D0
+P 9100 4300
+F 0 "C2" H 9150 4400 50  0000 L CNN
+F 1 "0.1uF" H 9150 4200 50  0000 L CNN
+	1    9100 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5013F7B6
+P 9500 4500
+F 0 "#PWR01" H 9500 4500 30  0001 C CNN
+F 1 "GND" H 9500 4430 30  0001 C CNN
+	1    9500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5013F792
+P 9100 4050
+F 0 "C1" H 9150 4150 50  0000 L CNN
+F 1 "0.1uF" H 9150 3950 50  0000 L CNN
+	1    9100 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5013F702
+P 8600 4800
+F 0 "R1" V 8680 4800 50  0000 C CNN
+F 1 "3.3k" V 8600 4800 50  0000 C CNN
+	1    8600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 5013F6A9
+P 4050 3550
+F 0 "#PWR02" H 4050 3650 30  0001 C CNN
+F 1 "VCC" H 4050 3650 30  0000 C CNN
+	1    4050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5013E5AA
+P 6500 3150
+F 0 "#PWR03" H 6500 3150 30  0001 C CNN
+F 1 "GND" H 6500 3080 30  0001 C CNN
+	1    6500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM555N 555
+U 1 1 5013E59D
+P 7900 4100
+F 0 "555" H 7900 4200 70  0000 C CNN
+F 1 "LM555N" H 7900 4000 70  0000 C CNN
+	1    7900 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2 P3
+U 1 1 5013E3B3
+P 8350 2350
+F 0 "P3" V 8300 2350 40  0000 C CNN
+F 1 "CONN_2" V 8400 2350 40  0000 C CNN
+	1    8350 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_2 P2
+U 1 1 5013E397
+P 7950 2350
+F 0 "P2" V 7900 2350 40  0000 C CNN
+F 1 "CONN_2" V 8000 2350 40  0000 C CNN
+	1    7950 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 5013E391
+P 8700 5600
+F 0 "P1" V 8650 5600 40  0000 C CNN
+F 1 "CONN_2" V 8750 5600 40  0000 C CNN
+	1    8700 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L ARDUINO_SHIELD SHIELD1
+U 1 1 5013D62D
+P 5150 3750
+F 0 "SHIELD1" H 4800 4700 60  0000 C CNN
+F 1 "ARDUINO_SHIELD" H 5200 2800 60  0000 C CNN
+	1    5150 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

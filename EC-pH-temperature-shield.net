@@ -1,0 +1,87 @@
+# EESchema Netlist Version 1.1 created  sam. 28 juil. 2012 16:42:05 CEST
+(
+ ( /5013E59D DIP-8__300 555 LM555N
+  ( 1 GND )
+  ( 2 N-000014 )
+  ( 3 N-000005 )
+  ( 4 N-000016 )
+  ( 5 N-000015 )
+  ( 6 N-000014 )
+  ( 7 ? )
+  ( 8 VCC )
+ )
+ ( /5013F792 C1 C1 0.1uF
+  ( 1 GND )
+  ( 2 N-000015 )
+ )
+ ( /5013F7D0 C1 C2 0.1uF
+  ( 1 GND )
+  ( 2 N-000014 )
+ )
+ ( /5013E391 bnc-ci P1 CONN_2
+  ( 1 N-000014 )
+  ( 2 N-000005 )
+ )
+ ( /5013E397 bnc-ci P2 CONN_2
+  ( 1 ? )
+  ( 2 ? )
+ )
+ ( /5013E3B3 bnc-ci P3 CONN_2
+  ( 1 ? )
+  ( 2 ? )
+ )
+ ( /5013F702 R3 R1 3.3k
+  ( 1 N-000014 )
+  ( 2 N-000005 )
+ )
+ ( /5013D62D ARDUINO_SHIELD SHIELD1 ARDUINO_SHIELD
+  ( 0 ? )
+  ( 1 ? )
+  ( 2 N-000005 )
+  ( 3 N-000016 )
+  ( 3V3 ? )
+  ( 4 ? )
+  ( 5 ? )
+  ( 5V VCC )
+  ( 6 ? )
+  ( 7 ? )
+  ( 8 ? )
+  ( 9 ? )
+  ( 10 ? )
+  ( 11 ? )
+  ( 12 ? )
+  ( 13 ? )
+  ( AD0 ? )
+  ( AD1 ? )
+  ( AD2 ? )
+  ( AD3 ? )
+  ( AD4 ? )
+  ( AD5 ? )
+  ( AREF ? )
+  ( GND1 ? )
+  ( GND2 ? )
+  ( GND3 GND )
+  ( RST ? )
+  ( V_IN ? )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$endfootprintlist
+}
