@@ -1,78 +1,156 @@
-# EESchema Netlist Version 1.1 created  sam. 28 juil. 2012 16:42:05 CEST
+# EESchema Netlist Version 1.1 created  lun. 30 juil. 2012 14:42:29 CEST
 (
- ( /5013E59D DIP-8__300 555 LM555N
-  ( 1 GND )
-  ( 2 N-000014 )
-  ( 3 N-000005 )
-  ( 4 N-000016 )
-  ( 5 N-000015 )
-  ( 6 N-000014 )
-  ( 7 ? )
-  ( 8 VCC )
+ ( /50168100 $noname  U1 TLC272 {Lib=LM358}
+  (    1 /Vref )
+  (    2 /Vref )
+  (    3 N-000030 )
+  (    4 GND )
+  (    5 N-000003 )
+  (    6 N-000006 )
+  (    7 /VpH )
+  (    8 VCC )
  )
- ( /5013F792 C1 C1 0.1uF
-  ( 1 GND )
-  ( 2 N-000015 )
+ ( /5016809B $noname  U2 LM358 {Lib=LM358}
+  (    1 /Vtemp )
+  (    2 N-000005 )
+  (    3 N-000031 )
+  (    4 GND )
+  (    8 VCC )
  )
- ( /5013F7D0 C1 C2 0.1uF
-  ( 1 GND )
-  ( 2 N-000014 )
+ ( /50167475 $noname  Temp1 CONN_3 {Lib=CONN_3}
+  (    1 GND )
+  (    2 N-000031 )
+  (    3 VCC )
  )
- ( /5013E391 bnc-ci P1 CONN_2
-  ( 1 N-000014 )
-  ( 2 N-000005 )
+ ( /5016731D $noname  R7 R {Lib=R}
+  (    1 /Vtemp )
+  (    2 N-000005 )
  )
- ( /5013E397 bnc-ci P2 CONN_2
-  ( 1 ? )
-  ( 2 ? )
+ ( /50167310 $noname  R6 R {Lib=R}
+  (    1 N-000005 )
+  (    2 GND )
  )
- ( /5013E3B3 bnc-ci P3 CONN_2
-  ( 1 ? )
-  ( 2 ? )
+ ( /50157ABE $noname  R5 120k {Lib=R}
+  (    1 /VpH )
+  (    2 N-000006 )
  )
- ( /5013F702 R3 R1 3.3k
-  ( 1 N-000014 )
-  ( 2 N-000005 )
+ ( /50157AAE $noname  R4 40k {Lib=R}
+  (    1 GND )
+  (    2 N-000006 )
  )
- ( /5013D62D ARDUINO_SHIELD SHIELD1 ARDUINO_SHIELD
-  ( 0 ? )
-  ( 1 ? )
-  ( 2 N-000005 )
-  ( 3 N-000016 )
-  ( 3V3 ? )
-  ( 4 ? )
-  ( 5 ? )
-  ( 5V VCC )
-  ( 6 ? )
-  ( 7 ? )
-  ( 8 ? )
-  ( 9 ? )
-  ( 10 ? )
-  ( 11 ? )
-  ( 12 ? )
-  ( 13 ? )
-  ( AD0 ? )
-  ( AD1 ? )
-  ( AD2 ? )
-  ( AD3 ? )
-  ( AD4 ? )
-  ( AD5 ? )
+ ( /501579E4 $noname  R2 R {Lib=R}
+  (    1 N-000030 )
+  (    2 GND )
+ )
+ ( /501579DD $noname  R3 R {Lib=R}
+  (    1 VCC )
+  (    2 N-000030 )
+ )
+ ( /5013F7D0 $noname  C2 0.1uF {Lib=C}
+  (    1 GND )
+  (    2 N-000035 )
+ )
+ ( /5013F792 $noname  C1 0.1uF {Lib=C}
+  (    1 GND )
+  (    2 N-000024 )
+ )
+ ( /5013F702 $noname  R1 3.3k {Lib=R}
+  (    1 N-000035 )
+  (    2 /Ec_out )
+ )
+ ( /5013E59D $noname  555 LM555N {Lib=LM555N}
+  (    1 GND )
+  (    2 N-000035 )
+  (    3 /Ec_out )
+  (    4 /Ec_en )
+  (    5 N-000024 )
+  (    6 N-000035 )
+  (    7 ? )
+  (    8 VCC )
+ )
+ ( /5013E397 $noname  Ph1 CONN_2 {Lib=CONN_2}
+  (    1 N-000003 )
+  (    2 /Vref )
+ )
+ ( /5013E391 $noname  EC1 CONN_2 {Lib=CONN_2}
+  (    1 /Ec_out )
+  (    2 N-000035 )
+ )
+ ( /5013D62D $noname  SHIELD1 ARDUINO_SHIELD {Lib=ARDUINO_SHIELD}
+  (    0 ? )
+  (    1 ? )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 /Ec_out )
+  (   5V VCC )
+  (    6 /Ec_en )
+  (    7 ? )
+  (    8 ? )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (  3V3 ? )
+  (  AD0 ? )
+  (  AD1 /VpH )
+  (  AD2 /Vtemp )
+  (  AD3 ? )
+  (  AD4 ? )
+  (  AD5 ? )
   ( AREF ? )
-  ( GND1 ? )
-  ( GND2 ? )
+  ( GND1 GND )
+  ( GND2 GND )
   ( GND3 GND )
-  ( RST ? )
+  (  RST ? )
   ( V_IN ? )
  )
 )
 *
 { Allowed footprints by component:
-$component C1
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C2
  SM*
  C?
  C1-1
 $endlist
-$component C2
+$component C1
  SM*
  C?
  C1-1
@@ -85,3 +163,73 @@ $component R1
 $endlist
 $endfootprintlist
 }
+{ Pin List by Nets
+Net 1 "VCC" "VCC"
+ SHIELD1 5V
+ 555 8
+ Temp1 3
+ U1 8
+ U2 8
+ R3 1
+Net 2 "/Vref" "Vref"
+ Ph1 2
+ U1 2
+ U1 1
+Net 3 "" ""
+ Ph1 1
+ U1 5
+Net 4 "GND" "GND"
+ Temp1 1
+ 555 1
+ U2 4
+ R6 2
+ R4 1
+ C1 1
+ SHIELD1 GND1
+ SHIELD1 GND2
+ SHIELD1 GND3
+ C2 1
+ U1 4
+ R2 2
+Net 5 "" ""
+ R7 2
+ U2 2
+ R6 1
+Net 6 "" ""
+ R5 2
+ R4 2
+ U1 6
+Net 15 "/VpH" "VpH"
+ U1 7
+ SHIELD1 AD1
+ R5 1
+Net 24 "" ""
+ 555 5
+ C1 2
+Net 30 "" ""
+ U1 3
+ R3 2
+ R2 1
+Net 31 "" ""
+ Temp1 2
+ U2 3
+Net 32 "/Ec_out" "Ec_out"
+ SHIELD1 5
+ EC1 1
+ R1 2
+ 555 3
+Net 33 "/Ec_en" "Ec_en"
+ 555 4
+ SHIELD1 6
+Net 34 "/Vtemp" "Vtemp"
+ SHIELD1 AD2
+ U2 1
+ R7 1
+Net 35 "" ""
+ R1 1
+ C2 2
+ 555 2
+ 555 6
+ EC1 2
+}
+#End
